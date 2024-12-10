@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu Height="20" VerticalAlignment="Top">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Следующее" Click="MenuItem_Click_2"/>
+                <MenuItem Header="Предыдущее" Click="MenuItem_Click_1"/>
+                <Separator></Separator>
+                <MenuItem Header="Окно с TextBox" Click="MenuItem_Click_3" />
+                <MenuItem Header="Выйти" Click="MenuItem_Click" />
+            </MenuItem>
+        </Menu>
+        <Button Content="Далее" HorizontalAlignment="Left" Height="29" Margin="668,374,0,0" VerticalAlignment="Top" Width="108" Click="Button_Click"/>
+        <Image Name="DisplayImageForm" HorizontalAlignment="Center" Stretch="Uniform"/>
+
+    </Grid>
+</Window>
